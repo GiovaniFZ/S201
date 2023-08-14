@@ -13,15 +13,16 @@ class Animal{
 }
 
 class Cachorro extends Animal{
+  #raca // Atributo privado
   constructor(nome, idade, especie, raca){
     super(nome, idade, especie);
-    this.raca = raca;
+    this.#raca = raca;
   }
   printInfo(){
     console.log("Nome: " + this.nome);
     console.log("Idade: " + this.idade);
     console.log("Especie: " + this.especie);
-    console.log("Raça: " + this.raca);
+    console.log("Raça: " + this.#raca);
     console.log("----------------------------");
   }
 }
